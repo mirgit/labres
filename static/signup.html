@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fa">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="assets/css/bootstrap-rtl.min_.css">
+        <link href="assets/css/singup.css" type="text/css" rel="stylesheet">
+        <script type="text/javascript" src="js/signUP.js"></script>
+
+        <title>Singup page</title>
+    </head>
+    <body>
+        <div class="container col">
+            <form class="form-horizontal" role="form">
+                <h2 style="font-family: 'yekan', serif">فرم ثبت نام</h2>
+                <div class="alert alert-danger" style="text-align: center ; ">oh yeah!</div>
+                <div class="alert  alert-success" style="margin: auto ; text-align: center ;"></div>
+                <div class="form-group">
+                    <label for="firstName" class="col-sm-3 control-label">نام</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="firstName" placeholder="نام" class="form-control" autofocus>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="firstName" class="col-sm-3 control-label">نام خانوادگی</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="lastName" placeholder="نام خانوادگی" class="form-control" autofocus>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-sm-3 control-label">رمز عبور</label>
+                    <div class="col-sm-9">
+                        <input type="password" id="password" placeholder="رمز عبور" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-sm-3 control-label">تکرار رمز عبور</label>
+                    <div class="col-sm-9">
+                        <input type="password" id="re_password" placeholder="تکرار رمز عبور" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="birthDate" class="col-sm-3 control-label">تاریخ تولد</label>
+                    <div class="col-sm-9">
+                        <input type="date" id="birthDate" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="phone" class="col-sm-3 control-label">شماره تماس</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="phone" name="phone" placeholder="شماره تماس" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="code" class="col-sm-3 control-label">شماره ملی</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="code" name="code"  placeholder="شماره شناسنامه" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="gender" class="col-sm-3 control-label">جنسیت</label>
+                    <div class="col-sm-9">
+                        <select name="gender" id="gender" class="form-control" style="margin: 0; padding: 0 5px 0 0;">
+                            <option>مرد</option>
+                            <option>زن</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <div class="checkbox">
+                            <label>
+                                <input id ="terms" value="FALSE" type="checkbox"><a href="#">شرایط</a> را قبول دارم
+                            </label>
+                        </div>
+                    </div>
+                </div> <!-- /.form-group -->
+                <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <button type="button" id="accept_button" class="btn btn-primary btn-block">تایید</button>
+                        <button type="button" id="return_button" class="btn btn-danger btn-block">بازگشت</button>
+                    </div>
+                </div>
+            </form> <!-- /form -->
+        </div> <!-- ./container -->
+    </body>
+</html>

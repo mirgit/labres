@@ -1,0 +1,188 @@
+ <!DOCTYPE html>
+<html lang="fa">
+    <head>
+        <meta charset="UTF-8">
+        <title>TestPage</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="assets/css/bootstrap-rtl.min_.css">
+        <link href="assets/css/home_employee.css" type="text/css" rel="stylesheet">
+        <script type="text/javascript" src="js/test_page.js"></script>
+
+    </head>
+    <body>
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-header">
+                <!--<a class="navbar-brand" href="#">لب ریز</a>-->
+                <!--<label class="navbar-brand" style="float : left ; margin-left: 50px; font-size : 13px;" id="welcome">خوش آمدید</label>-->
+                <label style="color: #33334d; margin-right: 40px; margin-top: 15px; margin-bottom : 15px; font-size : 17px;">لب ریز</label>
+                <label style="float : left ; color: #33334d; margin-left: 50px; margin-top: 15px; margin-bottom : 15px; font-size : 13px;" id="welcome">خوش آمدید</label>
+
+                <!--<a class="navbar-brand" href="#">رزرو های روز</a>-->
+				<!--<a class="navbar-brand" >رفتن به</a>-->
+				<!--<div class="col-sm-1">-->
+                        <!--<input type="text" id="day" placeholder="روز" class="form-control" autofocus>-->
+                    <!--</div>-->
+				<!--<div class="col-sm-1">-->
+                        <!--<input type="text" id="mounth" placeholder="ماه" class="form-control" autofocus>-->
+                    <!--</div>-->
+				<!--<div class="col-sm-1">-->
+                        <!--<input type="text" id="year" placeholder="سال" class="form-control" autofocus>-->
+                    <!--</div>-->
+
+            </div>
+        </nav>
+
+		<div class="sidenav">
+            <a href="#home">صفحه اصلی</a>
+            <!--<a href="search.html">جست و جو</a>-->
+            <!--<a href="reserve2.html">رزرو نوبت</a>-->
+            <!--<a href="home_employee1.html">صفحه اصلی</a>-->
+            <!--<a href="test_page.html">تست</a>-->
+            <a href="#add">اضافه کردن آزمایش جدید</a>
+            <a href="#exit">خروج</a>
+        </div>
+		<div class="main">
+		<div class="container">
+		<form class="form-horizontal" role="form">
+            <div id="success" class="alert  alert-success" style="width : 300px; margin-bottom: 20px; height : 50px ; text-align: center ;"> </div>
+            <div id="fail" class="alert  alert-danger" style="width : 300px; height : 50px;margin-bottom: 20px; text-align: center ;"></div>
+
+            <div class="form-group">
+				 <label for="name_exp" class="col-sm-3 control-label">نام آزمایش :</label>
+                <div class="col-sm-3">
+                    <label type="text" id="name_exp" class="form-control"></label>
+                </div>
+				     <div class="col-sm-3 col-sm-offset-3">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="paid">پرداخت شده
+                            </label>
+                        </div>
+                    </div>
+
+            </div>
+			<div class="form-group">
+							<label for="name_cus" class="col-sm-3 control-label">مراجعه کننده :</label>
+                <div class="col-sm-3">
+                    <label type="text" id="name_cus"class="form-control"></label>
+                </div>
+				     <div class="col-sm-3 col-sm-offset-3">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="done">انجام شده
+                            </label>
+                        </div>
+                    </div>
+				</div>
+				<div class="form-group">
+							<label for="time" class="col-sm-3 control-label">ساعت :</label>
+                <div class="col-sm-3">
+                    <label type="text" id="time"class="form-control"></label>
+                </div>
+				     <div class="col-sm-3 col-sm-offset-3">
+                        <div class="checkbox">
+                            <!--<label>-->
+                                <!--<input type="checkbox" id="result">فرستادن نتیجه-->
+                            <!--</label>-->
+                        </div>
+                    </div>
+				</div>
+				<div class="form-group">
+							<label for="pay" class="col-sm-3 control-label">روش پرداخت :</label>
+                <div class="col-sm-3">
+                    <label type="text" id="pay"class="form-control"></label>
+                </div>
+					<div class="form-group">
+				<label for="pay" class="col-sm-1 control-label">نتیجه :</label>
+                        <div class="col-sm-1 col-sm-offset-1">
+                            <button style="width : 120%" type="button" class=" btn btn-primary btn-block" id="show">مشاهده</button>
+                        </div>
+
+                        <div class="col-sm-1 col-sm-offset-1">
+                            <button type="button" class=" btn btn-primary btn-block" id="upload">آپلود</button>
+                        </div>
+				</div>
+                    <div class="col-sm-1 col-sm-offset-1">
+                        <button style="margin : auto ; width : 160%" type="button" class=" btn btn-primary btn-block" id="save">ثبت تغییرات</button>
+                    </div>
+                </div>
+        </form>
+        </div><h1></h1>
+            <!--<div class="container">-->
+		<!--<div class="form-group">-->
+            <!--<form action="/uploadresult" id="sendfile" class="form-horizontal" method="post" enctype="multipart/form-data">-->
+                <!--&lt;!&ndash;action="fileupload"&ndash;&gt;-->
+			<!--<h1></h1>-->
+			<!--<div class="col-sm-3 col-sm-offset-3">-->
+            <!--<input type="file" name="filetoupload"><br>-->
+			<!--</div>-->
+            <!--</div>-->
+			<!--<div class="form-group">-->
+			<!--<div class="col-sm-3 col-sm-offset-3">-->
+            <!--<input type="submit">-->
+			<!--</div>-->
+            <!--</form>-->
+		<!--</div>-->
+		<!--</div>-->
+            <div id="up" class="container">
+                <!--<form class="form-horizontal" role="form">-->
+                        <!--action="/action="/uploadresult"-->
+                        <form  id="sendfile" class="form-horizontal" method="post"  enctype="multipart/form-data">
+                            <!--action="fileupload"-->
+                            <div class="col-sm-3 col-sm-offset-3">
+                                <input type="file" id="filetoupload" name="filetoupload"><br>
+                            </div>
+                             <div class="form-group">
+                                 <div class="col-sm-2 col-sm-offset-1">
+                                        <input type="submit" class="btn btn-primary btn-block" id="submit" value="فرستادن">
+                                     <script>
+                                         $('#sendfile' ).submit(
+                                             function( e ) {
+                                                 $.ajax( {
+                                                     url: '/uploadresult',
+                                                     type: 'POST',
+                                                     data: new FormData( this ),
+                                                     processData: false,
+                                                     contentType: false,
+                                                     success: function(result){
+                                                         console.log(result);
+                                                         if(result.status) {
+                                                             $("#fail").slideUp(1);
+                                                             $("#success").slideUp(1);
+                                                             $("#success").html("با موفقیت آپلود شد").slideDown(500);
+                                                         }else {
+                                                             $("#fail").slideUp(1);
+                                                             $("#success").slideUp(1);
+                                                             $("#fail").html("آپلود فایل موفقیت آمیز نبود.لطفا بعدا تلاش کنید").slideDown(500);
+                                                         }
+                                                         //$("#div1").html(str);
+                                                     }
+                                                 } );
+                                                 e.preventDefault();
+                                             }
+                                         );
+//                                         $("#sendfile").submit(function(event){
+//                                             $.post('/uploadresult',function(){
+//                                                 event.preventDefault();
+//                                                 $(this).submit();
+//                                                 console.log("hehe"+event['msg']);
+//                                                 if(data['status']){
+//                                                     successBox.slideDown(500);
+//                                                 }
+//                                                 console.log(data);
+//                                             });
+//                                         });
+                                     </script>
+                                 </div>
+                             </div>
+                        </form>
+            </div>
+            <!--</form>-->
+        </div>
+		</body>
+		</html>
+		
+		

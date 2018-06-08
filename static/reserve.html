@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fa">
+    <head>
+        <meta charset="UTF-8">
+        <title>reserve</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="assets/css/bootstrap-rtl.min_.css">
+        <link href="assets/css/reserve.css" type="text/css" rel="stylesheet">
+        <script type="text/javascript" src="js/reserve.js"></script>
+
+    </head>
+    <body>
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-header">
+                <!--<a class="navbar-brand" href="#">لب ریز</a>-->
+                <!--<label class="navbar-brand" style="float : left ; margin-left: 50px; font-size : 13px;" id="welcome">خوش آمدید</label>-->
+                <label style="color: #33334d; margin-right: 40px; margin-top: 15px; margin-bottom : 15px; font-size : 17px;">لب ریز</label>
+                <label style="float : left ; color: #33334d; margin-left: 50px; margin-top: 15px; margin-bottom : 15px; font-size : 13px;" id="welcome">خوش آمدید</label>
+
+            </div>
+        </nav>
+        <div class="sidenav">
+            <a href="#home">صفحه اصلی</a>
+            <a href="#history">سوابق</a>
+            <a href="#search">جست و جو و رزرو نوبت</a>
+            <a href="#follow">پیگیری</a>
+            <a href="#exit">خروج</a>
+        </div>
+<div class="main">
+    <!--یگر-->
+
+    <div class="container">
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label for="lab_type" class="col-sm-3 control-label">نام آزمایش :</label>
+                <div class="col-sm-9">
+                    <name="text" id="lab_type" class="form-control" autofocus>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="lab_name" class="col-sm-3 control-label">نام آزمایشگاه :</label>
+                <div class="col-sm-9">
+                    <name="text" id="lab_name" class="form-control" autofocus>
+                </div>
+            </div>
+	         <div class="form-group">
+                <label for="Date_Time" class="col-sm-3 control-label">تاریخ و زمان :</label>
+                <div class="col-sm-9">
+                    <name="text" id="Date_Time" class="form-control">
+                </div>
+            </div>
+		</form>
+	</div>
+	<h2></h2>
+	<div class="container">
+	<form class="form-horizontal" role="form">
+            <div class="form-group">
+				 <label for="PhoneNumber" class="col-sm-3 control-label">شماره تماس :</label>
+                <div class="col-sm-3">
+                    <name="text" id="PhoneNumber" class="form-control">
+                </div>
+				<label for="Doctor_name" class="col-sm-3 control-label">نام پزشک :</label>
+                <div class="col-sm-3">
+                    <name="text" id="Doctor_name"class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Address" class="col-sm-3 control-label">آدرس :</label>
+                <div class="col-sm-8">
+                    <name="text" id="Address"class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+			     <label for="price" class="col-sm-3 control-label">هزینه :</label>
+                <div class="col-sm-3">
+                    <name="text" id="price"class="form-control">
+                </div>
+            </div>
+
+	
+	
+		<div class="form-group">
+		                <div class="col-sm-6">
+                    <label for="zmtakh" class="col-sm-5 control-lable">زمان و تاریخ</label>
+                    <select name="zamantarikh" id="zmtakh" class="form-control" style="margin: 0;padding: 0 2px 0 0; ">
+                    </select>
+                </div>
+								
+					<div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="incu"><a href="bime.html">بیمه</a>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="onlinepay"><a href="bank.html">پرداخت آنلاین </a>
+                        </label>
+                    </div>
+            </div>
+			</form>
+		</div>
+		<div class="container">
+		<form class="form-horizontal" role="form">
+				 <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <button type="button"  class="btn btn-primary btn-block" id="ack">تایید</button>
+                        <button type="button"  class="btn btn-danger btn-block" a="home_sick.html" id="ret">بازگشت</button>
+                    </div>
+                </div>
+		</form>
+		</div>
+
+</body>
+</html>

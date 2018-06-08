@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fa">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap-rtl.min_.css">
+        <link href="assets/css/login.css" type="text/css" rel="stylesheet">
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/login.js"></script>
+        <title>LogIn page</title>
+    </head>
+    <body>
+        <div class="container ">
+            <form class="form-horizontal col-sm-8" role="form">
+                <h3 style=" font-family: 'yekan', serif ;margin : auto; margin-bottom: 50px">سامانه رزرو آزمایشگاه آنلاین لبریز</h3>
+                <div class="form-group">
+                    <label for="username" class="col-sm-3 control-label">شماره ملی</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="username" placeholder="شماره ملی" class="form-control" autofocus>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-sm-3 control-label">رمز عبور</label>
+                    <div class="col-sm-9">
+                        <input type="password" id="password" placeholder="رمز عبور" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <button type="button" id="loginbutton" class="btn btn-primary btn-block">تایید</button>
+                        <button type="button" id="returnbutton" class="btn btn-danger btn-block">بازگشت</button>
+                    </div>
+                </div>
+                <div class="alert  alert-danger " style="text-align: center ; "></div>
+                <div class="alert  alert-success" style="margin: auto ; text-align: center ;"></div>
+            </form>
+        </div>
+	</body>
+</html>
